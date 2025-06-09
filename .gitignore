@@ -1,0 +1,14 @@
+# Ignore virtual environment
+venv/
+
+# Ignore data and model outputs
+data/
+__pycache__/
+*.pyc
+*.wav
+*.txt
+*.log
+
+# VSCode & system files
+.vscode/
+.DS_Store
