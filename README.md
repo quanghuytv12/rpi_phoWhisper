@@ -150,47 +150,6 @@ python3 python/daemon_nlu.py &
 echo "All daemons running"
 ```
 
----
-
-## 🛠 Troubleshooting
-
-* **Permission denied** creating `/data`:
-
-  * Ensure you run `install.sh` from repo root and it uses relative `data/` (not `/data`).
-* **ALSA warnings** in audio logs:
-
-  * These are non-fatal; redirect stderr to suppress:
-
-    ```bash
-    python3 python/daemon_audio.py 2>/dev/null
-    ```
-  * Or specify `input_device_index` in code.
-* **VS Code Pylance** cannot resolve `pyaudio`:
-
-  * Select correct interpreter: `venv/bin/python`.
-* **Git commit author unknown**:
-
-  ```bash
-  git config user.name "Your Name"
-  git config user.email "you@example.com"
-  ```
-
----
-
-## 📦 .gitignore
-
-```gitignore
-venv/
-data/
-__pycache__/
-*.pyc
-*.wav
-*.txt
-.vscode/
-```
-
----
-
 ## 🤝 Contributing
 
 Feel free to open issues or pull requests for improvements (logging, Docker, systemd services, etc.).
