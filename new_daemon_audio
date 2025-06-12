@@ -16,7 +16,7 @@ PRE_BUFFER_SECONDS = 1
 SILENCE_THRESHOLD = 0.01  # Energy threshold for silence detection
 SILENCE_DURATION = 1.0    # Seconds of silence to stop recording
 ACCESS_KEY = "YOUR_PICOVOICE_ACCESS_KEY"  # Replace with your Picovoice AccessKey
-WAKEWORD = "Hello Pi"  # Or custom wake word
+WAKEWORD = "jarvis"  # Or custom wake word
 WAKEWORD_MODEL_PATH = "models/hey_jarvis.ppn"  # Adjust path relative to repo
 
 # Shared queue for audio data
